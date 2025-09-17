@@ -1,0 +1,23 @@
+{
+  "name": "pageobject-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artpikozov/pageobject-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artpikozov/pageobject-JS/issues"
+  },
+  "homepage": "https://github.com/Artpikozov/pageobject-JS#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.1"
+  }
+}
