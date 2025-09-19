@@ -13,6 +13,7 @@ test('Выход пользователя из аккаунта', async ({page})
 
     const mainpage = new MainPage(page);
     const registerpage = new RegisterPage(page);
+    const yourfeedpage = new YourFeedPage (page);
 
     // перейти на страницу https://realworld.qa.guru/
     await page.goto(URL);
@@ -21,8 +22,11 @@ test('Выход пользователя из аккаунта', async ({page})
     //зарегистрировать пользователя
     await registerpage.register(name, email, password);
     // выйти из зарегестрированного аккаунта
-    await mainpage.goToRegister.dropdownProfile()
-    await mainpage.goToRegister.logoutButton()
+    await yourfeedpage.out()
+    //проверить что мы вышли из аккаунта
+
+    await expect(yourfeedpage.loginButton).toBeVisible();
+
 
 
 
